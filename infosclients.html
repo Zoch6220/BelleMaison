@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Belle Maison</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./image/logo.jpg">
+        <script src="script.js" defer></script>
+
+        
+    <header class="header fixed-header">
+        <a href="/" class="logo">
+            <img src="./image/logo.jpg" alt="Logo" width="40" height="32">
+            <span>Belle Maison</span>
+        </a>
+        <ul class="nav">
+            <li class="nav-item"><a href="menu.html" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="typesdeproprietes.html" class="nav-link">Type de Propriété</a></li>
+            <li class="nav-item"><a href="infosclients.html" class="nav-link active" aria-current="page">Information Clients</a></li>
+            <li class="nav-item"><a href="calculhypotheque.html" class="nav-link">Calcul Hypothèque</a></li>
+        </ul>
+    </header>
+<body>
+  <h1>Information Clients</h1>
+    <div class="formContainer">
+     <form name="formulaire">
+        <label for="fname" >Prénom:</label> <br> 
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname" >Nom de Famille:</label> <br>
+        <input type="text"  id="lname" name="lname"><br>
+        <label for="eemail">Email:</label><br>
+        <input type="email" name="eemail" id="eemail"> <br>
+        <label for="adresse">Adresse</label><br>
+        <input type="text" id="adresse"name="adresse"> <br>
+        <label for="ndate">Date de naissance</label> <br>
+        <input type="date" name="ndate" id="ndate"> <br><br>
+        <input type="button" value="Envoyer" onclick="confirmer(document.forms['formulaire'])">
+        <input type="reset" value="Effacer">
+      </form>
+    </div>
+  
+</body>
+<footer class="footer">
+    <p> &copy; 2024 Belle Maison. All rights reserved</p>
+    <div id="dateheure"></div>
+</footer>
+</html>

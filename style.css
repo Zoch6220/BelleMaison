@@ -1,0 +1,169 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* or another background color to match your design */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional, adds a shadow for better visibility */
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header .logo img {
+  margin-right: 0.5rem;
+}
+.header .nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav-item {
+  margin-left: 1rem;
+}
+.header .nav-link {
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-decoration: none;
+}
+.header .nav-link.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+body {
+  padding-top: 80px; /* adjust based on the height of your header */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.container{
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+.container img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.container p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.grid-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.button,input[type=button],input[type=reset] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.50rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.thumbnail img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding:1px;
+  width: 400px;
+  height: 300px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+.description img{
+  height: 384px;
+  width: 576px;
+}
+
+.formContainer{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input[type=text], input[type=email],input[type=date] ,input[type=number] {
+  width: 50%;
+ text-align: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=button]:hover{
+  background-color: #06a4f9;
+}
+input[type=reset]:hover{
+  background-color:red;
+}

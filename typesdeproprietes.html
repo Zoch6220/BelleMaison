@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Belle Maison</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./image/logo.jpg">
+        <script src="script.js" defer></script>
+       
+    </head>
+    <header class="header fixed-header">
+        <a href="/" class="logo">
+            <img src="./image/logo.jpg" alt="Logo" width="40" height="32" class="me-2">
+            <span class="fs-4">Belle Maison</span>
+        </a>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="menu.html" class="nav-link ">Accueil</a></li>
+            <li class="nav-item"><a href="typesdeproprietes.html" class="nav-link active" aria-current="page">Type  de Propriété</a></li>
+            <li class="nav-item"><a href="infosclients.html" class="nav-link">Information Clients</a></li>
+            <li class="nav-item"><a href="calculhypotheque.html" class="nav-link">Calcul Hypothèque</a></li>
+            
+        </ul>
+    </header>
+    <body>
+        <h1>Propriété a vendre</h1>
+<!--        <section id="PropTumbnails">
+            <div class="thumbnail" onclick="showPropertyDetails('prop1')">
+                <img src="image/prop1.jpg" alt="Mont-Tremblant">
+                <p>Mont-Tremblant</p>
+            </div>
+            <div class="thumbnail" onclick="showPropertyDetails('prop2')">
+                <img src="image/prop2.jpg" alt="Gatineau">
+                <p>Gatineau</p>
+            </div> 
+            <div class="thumbnail" onclick="showPropertyDetails('prop3')">
+                <img src="image/prop3.jpg" alt="Quebec">
+                <p>Quebec</p>
+            </div>
+            <div class="thumbnail" onclick="showPropertyDetails('prop4')">
+                <img src="image/prop4.jpg" alt="Sherbrooke">
+                <p>Sherbrooke</p>
+            </div> 
+       </section> -->
+       <section id="PropTumbnails">
+        <div class="row">
+                <div class="column">
+                    <div class="thumbnail" onclick="showPropertyDetails('prop1')">
+                        <img src="image/prop1.jpg" alt="Mont-Tremblant">
+                        <p>Mont-Tremblant</p>
+                    </div>
+                    <div class="thumbnail" onclick="showPropertyDetails('prop5')">
+                        <img src="image/prop5.jpg" alt="Laval">
+                        <p>Laval</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="thumbnail" onclick="showPropertyDetails('prop2')">
+                        <img src="image/prop2.jpg" alt="Gatineau">
+                        <p>Gatineau</p>
+                    </div>
+                    <div class="thumbnail" onclick="showPropertyDetails('prop6')">
+                        <img src="image/prop6.jpg" alt="Trois-Riviere">
+                        <p>Trois-Riviere</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="thumbnail" onclick="showPropertyDetails('prop3')">
+                        <img src="image/prop3.jpg" alt="Quebec">
+                        <p>Quebec</p>
+                    </div> 
+                    <div class="thumbnail" onclick="showPropertyDetails('prop7')">
+                        <img src="image/prop7.jpg" alt="Saint-Jerome">
+                        <p>Saint-Jerome</p>
+                    </div> 
+                </div>
+                <div class="column">
+                    <div class="thumbnail" onclick="showPropertyDetails('prop4')">
+                        <img src="image/prop4.jpg" alt="Sherbrooke">
+                        <p>Sherbrooke</p>
+                    </div>
+                    <div class="thumbnail" onclick="showPropertyDetails('prop8')">
+                        <img src="image/prop8.jpg" alt="Drummondville">
+                        <p>Drummondville</p>
+                    </div>  
+                </div>
+    
+        </div>
+        </section>
+       <section id="detailsProp">
+
+       </section>
+       
+    </body>
+    <footer class="footer">
+        <p> &copy; 2024 Belle Maison. All rights reserved</p>
+        <div id="dateheure"></div>
+    </footer>
+</html>
